@@ -1,0 +1,33 @@
+nav#main { // top selector here
+
+  &> ul > li {
+    position: relative;
+  }
+
+  ul li ul { // Nested <ul>s
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 250px;
+    background-color: rgb(255,255,255);
+    border: 1px solid #ccc;
+    left: 0; // For Firefox compat
+    top: 27px; // For IE compat
+    &.revealed {
+      display: block;
+    }
+    a {
+      display: block;
+      padding: 0.5em 0.5em 0.3em 0.5em;
+    }
+    li {
+      display: block;
+      &:hover {
+        background-color: black;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
