@@ -45,8 +45,6 @@
           link.mouseout( function (e) { n--; check(); });
           child.mouseover( function (e) { n++; });
           child.mouseout( function (e) { n--; check(); });
-          link.click( function () { return false; });
-          link.addClass( 'unclick' );
         });
       });
     });
