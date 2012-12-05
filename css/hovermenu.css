@@ -1,9 +1,15 @@
 /* line 3, ../sass/hovermenu.scss */
-nav#main > ul > li {
+.hoverMenu ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 9, ../sass/hovermenu.scss */
+.hoverMenu > ul > li {
+  display: inline;
   position: relative;
 }
-/* line 7, ../sass/hovermenu.scss */
-nav#main ul li ul {
+/* line 15, ../sass/hovermenu.scss */
+.hoverMenu ul li ul {
   display: none;
   position: absolute;
   z-index: 99;
@@ -13,24 +19,24 @@ nav#main ul li ul {
   left: 0;
   top: 27px;
 }
-/* line 16, ../sass/hovermenu.scss */
-nav#main ul li ul.revealed {
+/* line 24, ../sass/hovermenu.scss */
+.hoverMenu ul li ul.revealed {
   display: block;
 }
-/* line 19, ../sass/hovermenu.scss */
-nav#main ul li ul a {
+/* line 27, ../sass/hovermenu.scss */
+.hoverMenu ul li ul a {
   display: block;
   padding: 0.5em 0.5em 0.3em 0.5em;
 }
-/* line 23, ../sass/hovermenu.scss */
-nav#main ul li ul li {
+/* line 31, ../sass/hovermenu.scss */
+.hoverMenu ul li ul li {
   display: block;
 }
-/* line 25, ../sass/hovermenu.scss */
-nav#main ul li ul li:hover {
+/* line 33, ../sass/hovermenu.scss */
+.hoverMenu ul li ul li:hover {
   background-color: black;
 }
-/* line 27, ../sass/hovermenu.scss */
-nav#main ul li ul li:hover a {
+/* line 35, ../sass/hovermenu.scss */
+.hoverMenu ul li ul li:hover a {
   color: #fff;
 }

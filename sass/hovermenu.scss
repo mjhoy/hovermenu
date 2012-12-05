@@ -1,7 +1,15 @@
-nav#main { // top selector here
+.hoverMenu {
+  
+  ul { // override
+    list-style: none;
+    padding: 0;
+  }
 
-  &> ul > li {
-    position: relative;
+  &> ul {
+    &> li {
+      display: inline;
+      position: relative;
+    }
   }
 
   ul li ul { // Nested <ul>s
