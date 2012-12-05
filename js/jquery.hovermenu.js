@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
 
   $.fn.hoverMenu = function () {
 
@@ -51,4 +51,4 @@
       });
     });
   };
-})();
+})(jQuery);
