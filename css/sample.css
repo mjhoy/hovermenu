@@ -29,6 +29,15 @@ footer {
 }
 
 /* line 24, ../sass/sample.scss */
+ul {
+  font-size: 0.8em;
+}
+/* line 26, ../sass/sample.scss */
+ul code {
+  padding-right: 2px;
+}
+
+/* line 30, ../sass/sample.scss */
 h2 {
   margin-top: 2em;
   font-size: 1.2em;

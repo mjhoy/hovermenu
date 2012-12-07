@@ -1,6 +1,16 @@
 (function ($) {
 
-  $.fn.hoverMenu = function () {
+  var defaultOptions = {
+    // *topLinkSelector*
+    // This corresponds to the parent link of a nested menu;
+    // if the parent is not a link it may be something like
+    // "span.nolink", etc.
+    topLinkSelector : 'a'
+  };
+
+  $.fn.hoverMenu = function (opts) {
+
+    var options = $.extend( defaultOptions, opts || {} );
 
     var hideNested = function (nested) {
       nested.removeClass( 'revealed' );
@@ -22,7 +32,7 @@
 
         $( nested ).each( function () {
           var child = $( this )
-            , link = child.siblings( 'a' )
+            , link = child.siblings( options.topLinkSelector )
             , n = 0
             , tid = 0
             , check = function () { 
