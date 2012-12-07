@@ -29,11 +29,11 @@ footer {
 }
 
 /* line 24, ../sass/sample.scss */
-ul {
+ul.options {
   font-size: 0.8em;
 }
 /* line 26, ../sass/sample.scss */
-ul code {
+ul.options code {
   padding-right: 2px;
 }
 
